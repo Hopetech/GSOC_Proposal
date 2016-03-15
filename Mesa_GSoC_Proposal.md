@@ -20,16 +20,22 @@ The X.Org project "provides a free and open source implementation of the X Windo
 
 ## Aims
 
- The goal of this project is to implement a library of double precision operations in pure [GLSL](https://www.opengl.org/documentation/glsl/) 1.30 for GPU.
+GPUs natively support single precision, but only OpenGL 4.0 class GPUs have hardware support for double precision.
+The goal of this project is to implement a library of double precision operations in pure [GLSL](https://www.opengl.org/documentation/glsl/) 1.30 for GPU using bit twiddling.
+There are many library of software double precision floating point for devices that lack floating-point hardware.
+I should therefore translate one of this library (generally write in C) to pure GLSL 1.30.
 
 ## Constraints
 
-Main Mesa code is under MIT license. So it's important to use only compatible license like BSD style license.
+ - Main Mesa code is under MIT license. It will be important throughout the project period to only use compatible license files.
+ You can find a list of licenses [here](https://spdx.org/licenses/).
+
+ - Each double precision value would be stored in a `uvec2`.
 
 
 ## Deliverables
 
-- Implement following functions using bit twiddling operations:
+ - A library with the following functions:
     - Add.    
     - Negate.
     - Absolute value.
@@ -38,24 +44,26 @@ Main Mesa code is under MIT license. So it's important to use only compatible li
     - Convert from single precision.
     - Comparison
 
-
 - Nice to have:
-    - Sqrt.
+    - Rsqrt.
     - Log.
     - Exp.
 
+These last functions are not necessary for the implementation of `GL_ARB_gpu_shader_fp64` [see What's next section](#what's-next?) but may be useful for other uses.
+
+
 ## Schedule
 
-For each implemented function, I will make tests, documentation and then I'll submit my code to the community.
+For each implemented function, I will make tests, documentation and then I'll submit my code to the community for reviews.
 
 
 - **Before coding period**:
-    - Study current CPU "soft" double precision floating point library to familiarize myself with bit twiddling.
+    - Study current CPU "soft" double precision floating point libraries to familiarize myself with bit twiddling.
+    - Prepare tests architecture.
     - During this period I will remain in constant touch with my mentor and the all the Mesa community.
 
 
 - **May 23rd - May 29th**:
-    - Design tests.
     - Implement absolute value function.
 
 
@@ -64,7 +72,7 @@ For each implemented function, I will make tests, documentation and then I'll su
 
 
 - **June 6th - June 12th**:
-- Implement negate function.
+    - Implement negate function.
 
 
 - **June 13th - June 19th**:
@@ -84,19 +92,19 @@ For each implemented function, I will make tests, documentation and then I'll su
 
 
 - **July 11th - July 17th**:
-    - Implement conversion from single precision.
-
-
-- **July 18th - July 24th**:      
     - Implement comparison.
 
 
-- **July 25th - July 31st**:
+- **July 18th - July 24th**:      
     - Implement log function.
 
 
-- **August 1st - August 7th**:  
+- **July 25th - July 31st**:
     - Implement exponential function.
+
+
+- **August 1st - August 7th**:  
+    - Convert reciprocal, sqrt, rsqrt, and floor/ceil/truncate from [Intel NIR](https://github.com/Igalia/mesa/blob/i965-fp64/src/compiler/nir/nir_lower_double_ops.c) to GLSL.
 
 
 - **August 8th - August 14th**:
@@ -105,11 +113,6 @@ For each implemented function, I will make tests, documentation and then I'll su
 
 
 - **August 15th - August 22nd**:
-    - Clean code to comply with Mesa standards.
-    - Time for unpredictable delay.
-
-
-- **August 23rd - August 29th**:
     - Final evaluation.
 
 ## What's next?
