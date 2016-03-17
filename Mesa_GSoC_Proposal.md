@@ -4,6 +4,8 @@
 
 >**Phone:** +33 6 37 41 44 96
 
+>**Country:** France
+
 >**Time zone:** GMT+1
 
 ---
@@ -49,18 +51,18 @@ I should therefore translate one of this library (generally write in C) to pure 
     - Log.
     - Exp.
 
-These last functions are not necessary for the implementation of `GL_ARB_gpu_shader_fp64` [see What's next section](#what's-next?) but may be useful for other uses.
+These last functions are not necessary for the implementation of `GL_ARB_gpu_shader_fp64` [see What's next section](#whats-next) but may be useful for other uses.
 
 
 ## Schedule
 
-For each implemented function, I will make tests, documentation and then I'll submit my code to the community for reviews.
+For each implemented function, I shall realize tests, documentation and then submit my code to the community for reviewing.
 
 
 - **Before coding period**:
+    - During this period I will remain in constant touch with my mentor and the all the Mesa community.
     - Study current CPU "soft" double precision floating point libraries to familiarize myself with bit twiddling.
     - Prepare tests architecture.
-    - During this period I will remain in constant touch with my mentor and the all the Mesa community.
 
 
 - **May 23rd - May 29th**:
@@ -96,18 +98,19 @@ For each implemented function, I will make tests, documentation and then I'll su
 
 
 - **July 18th - July 24th**:      
-    - Implement log function.
+    - Convert reciprocal and rsqrt from [Intel NIR](https://github.com/Igalia/mesa/blob/i965-fp64/src/compiler/nir/nir_lower_double_ops.c) to GLSL 1.30.
 
 
 - **July 25th - July 31st**:
-    - Implement exponential function.
+    - Convert floor, ceil and truncate from [Intel NIR](https://github.com/Igalia/mesa/blob/i965-fp64/src/compiler/nir/nir_lower_double_ops.c) to GLSL 1.30. 
 
 
 - **August 1st - August 7th**:  
-    - Convert reciprocal, sqrt, rsqrt, and floor/ceil/truncate from [Intel NIR](https://github.com/Igalia/mesa/blob/i965-fp64/src/compiler/nir/nir_lower_double_ops.c) to GLSL.
+    - Implement exponential function.
 
 
 - **August 8th - August 14th**:
+    - Implement log function.
     - Clean code to comply with Mesa standards.
     - Time for unpredictable delay.
 
