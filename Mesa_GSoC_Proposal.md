@@ -27,7 +27,7 @@ During the "Google Summer of Code", I will contribute to Mesa by implementing a 
 ## Aims
 
 GPUs natively support single precision, but only OpenGL 4.0 class GPUs have hardware support for double precision.
-The goal of this project is to implement a library of double precision operations in pure [GLSL](https://www.opengl.org/documentation/glsl/) 1.30 for GPU using bit twiddling operations and integer math.
+The goal of this project is to implement a library of double precision operations in pure [GLSL](https://www.opengl.org/documentation/glsl/) 1.30 for this GPU using bit twiddling operations and integer math.
 There are many library of software double precision floating point for devices that lack floating-point hardware.
 I should therefore translate one of this library (generally write in C) to pure GLSL 1.30.
 
