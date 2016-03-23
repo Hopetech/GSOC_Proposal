@@ -17,7 +17,7 @@ _by Elie ([Hopetech](https://github.com/Hopetech)) TOURNIER, for GSoC 2016_
 
 ## Organization
 
-This project will take place with [X.org fundation](http://www.x.org/wiki/).
+This project will take place with [X.org foundation](http://www.x.org/wiki/).
 >The X.Org project "provides a free and open source implementation of the X Window System".
 
 [Mesa3D](http://www.mesa3d.org/), a graphics library, is part of the X.org project.
@@ -61,7 +61,7 @@ I should therefore translate one of this library (generally write in C) to pure 
     - Log.
     - Exp.
 
-These last functions are not necessary for the implementation of `GL_ARB_gpu_shader_fp64` [see What's next section](#whats-next) but may be useful for other uses.
+These last functions are not necessary for the implementation of `GL_ARB_gpu_shader_fp64` ([see What's next section](#whats-next)) but may be useful for other uses.
 
 
 ## Schedule
