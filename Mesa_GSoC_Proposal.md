@@ -11,8 +11,9 @@
 ---
 # "Soft" double precision floating point support.
 
-_by Elie (Hopetech) TOURNIER, for GSoC 2016_
+_by Elie ([Hopetech](https://github.com/Hopetech)) TOURNIER, for GSoC 2016_
 
+---
 
 ## Organization
 
