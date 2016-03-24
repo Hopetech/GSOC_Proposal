@@ -157,13 +157,16 @@ uvec2 truncDouble(uvec2 a);
 * **Name:** Elie TOURNIER
 * **Email:** tournier.elie@gmail.com
 * **IRC:** Elie_
+* **GitHub:** [GitHub](https://github.com/Hopetech/)
+* **Linkedin:** [Linkedin](https://fr.linkedin.com/in/elietournier)
 * **Resume:** [Resume](https://github.com/Hopetech/myResume/blob/master/CV_Elie.pdf)
+* **Country:** France
 * **Time zone:** GMT+1
 
 ### 7.2 Education
 
 * **Engineering school:** Telecom Physique Strasbourg, France
-* **Subject/Major:** Medical Information and Communication Technology
+* **Subject/Major:** Medical Information and Communication Technology (**Sandwich Course**)
 * **Year:** Last year
  
 ### 7.3 Work Experience
