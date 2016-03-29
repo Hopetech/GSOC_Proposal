@@ -181,5 +181,5 @@ I am currently working on the development of an image quality measurement softwa
 ## 8. Why did I choose this subject?
 
 I chose this subject for two reasons.
-First because I want to contribute to someting I daily use.
+First because I want to contribute to something I daily use.
 Secondly because GPU are the most beautiful component of the computer.
