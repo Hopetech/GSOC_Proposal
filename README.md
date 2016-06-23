@@ -50,7 +50,7 @@ You can find a list of licenses [here](https://spdx.org/licenses/).
  * Log.
  * Exp.
 
-These last functions are not necessary for the implementation of `GL_ARB_gpu_shader_fp64` ([see What's next section](#whats-next)) but may be useful for other uses.
+These last functions are not necessary for the implementation of `GL_ARB_gpu_shader_fp64` ([see What's next section](#6-whats-next)) but may be useful for other uses.
 
 
 ## 5. Schedule
