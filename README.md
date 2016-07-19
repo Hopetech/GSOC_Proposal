@@ -65,25 +65,25 @@ For each implemented function, I shall realize tests, documentation and then sub
 * **May 23rd - May 29th**:
   * Implement absolute value function.
 ```C
-uvec2 absDouble(uvec2 a);
+uvec2 abs_fp64(uvec2 a);
 ```
 
 * **May 30th - June 5th**:
   * Implement add function.
 ```C
-uvec2 addDouble(uvec2 a, uvec2 b);
+uvec2 add_fp64(uvec2 a, uvec2 b);
 ```
 
 * **June 6th - June 12th**:
   * Implement negate function.
 ```C
-uvec2 negDouble(uvec2 a);
+uvec2 neg_fp64(uvec2 a);
 ```
 
 * **June 13th - June 19th**:
   * Implement multiply function.
 ```C
-uvec2 mulDouble(uvec2 a, uvec2 b);
+uvec2 mul_fp64(uvec2 a, uvec2 b);
 ```
 
 * **June 20th - June 26th**:
@@ -92,13 +92,13 @@ uvec2 mulDouble(uvec2 a, uvec2 b);
 * **June 27th - July 3rd**:
   * Implement conversion to single precision.
 ```C
-uvec2 doubleToSingle(float a);
+uint fp64-to-fp32(uvec2 a);
 ```
 
 * **July 4th - July 10th**:
   * Implement conversion from single precision.
 ```C
-float singleToDouble(uvec2 a);
+uvec2 fp32-to-fp64(uint a);
 ```
 
 * **July 11th - July 17th**:
@@ -108,32 +108,32 @@ float singleToDouble(uvec2 a);
  * Returns `true` if the double-precision floating-point value `a' is equal to the
  * corresponding value `b', and `false` otherwise.
  */
-bool double_eq(uvec2 a, uvec2 b);
+bool eq_fp64(uvec2 a, uvec2 b);
 /**
  * Returns true if the double-precision floating-point value `a' is less than or
  * equal to the corresponding value `b', and false otherwise.
  */
-bool double_le(uvec2 a, uvec2 b);
+bool le_fp64(uvec2 a, uvec2 b);
 /**
  * Returns true if the double-precision floating-point value `a' is less than
  * the corresponding value `b', and false otherwise.
  */
-bool double_lt(uvec2 a, uvec2 b);
+bool lt_fp64(uvec2 a, uvec2 b);
 ```
 
 * **July 18th - July 24th**:
   * Port reciprocal and rsqrt from [NIR](https://github.com/Igalia/mesa/blob/i965-fp64/src/compiler/nir/nir_lower_double_ops.c) to GLSL 1.30.
 ```C
-uvec2 recipDouble(uvec2 a);
-uvec2 rsqrtDouble(uvec2 a);
+uvec2 recip_fp64(uvec2 a);
+uvec2 rsqrt_fp64(uvec2 a);
 ```
 
 * **July 25th - July 31st**:
   * Port floor, ceil and truncate from [NIR](https://github.com/Igalia/mesa/blob/i965-fp64/src/compiler/nir/nir_lower_double_ops.c) to GLSL 1.30.
 ```C
-uvec2 floorDouble(uvec2 a);
-uvec2 ceilDouble(uvec2 a);
-uvec2 truncDouble(uvec2 a);
+uvec2 floor_fp64(uvec2 a);
+uvec2 ceil_fp64(uvec2 a);
+uvec2 trunc_fp64(uvec2 a);
 ```
 
 * **August 1st - August 7th**:
